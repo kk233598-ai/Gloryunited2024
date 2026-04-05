@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glory United Football Academy</title>
+  <meta name="description"
+    content="Join Glory United Football Academy. Professional coaching, top-tier facilities, and a proven track record of success.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Oswald:wght@500;700&family=Cinzel:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <input type="file" id="logoUpload" accept="image/*" style="display: none;">
+        <img src="assets/logo.png?v=1.1" alt="Glory United Logo" id="nav-logo"
+          style="min-width: 50px; min-height: 50px;"
+          onerror="this.onerror=null; this.src='https://via.placeholder.com/100/c10016/ffffff?text=LOGO';">
+        <span>GLORY UNITED</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+      </ul>
+      <div class="nav-right" style="display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-primary desktop-btn" onclick="window.open('https://wa.me/916380199064', '_blank')">Book
+          Trial</button>
+        <div class="menu-toggle" id="mobile-menu" style="font-size: 1.8rem; cursor: pointer; color: var(--text-light);">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu-container"
+    style="display: none; position: fixed; top: 70px; right: 0; background: rgba(5, 0, 0, 0.95); width: 250px; padding: 2rem; border-radius: 0 0 0 12px; z-index: 999; border-left: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
+      <li><a href="#home" style="color: white; font-weight: bold; text-transform: uppercase;">Home</a></li>
+      <li><a href="#about" style="color: white; font-weight: bold; text-transform: uppercase;">About Us</a></li>
+      <li><a href="#programs" style="color: white; font-weight: bold; text-transform: uppercase;">Programs</a></li>
+      <li><button class="btn btn-primary" style="width: 100%; padding: 0.5rem;"
+          onclick="window.open('https://wa.me/916380199064', '_blank')">Book Trial</button></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="animate-up">RISE TO <span class="text-gold">GLORY</span></h1>
+      <h3 class="animate-up delay-1 text-gold"
+        style="font-family: 'Cinzel', serif; font-weight: 800; font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 1.5rem;">
+        Where dreams Kick off</h3>
+      <p class="animate-up delay-1">Unleash your potential with the ultimate football training experience. World-class
+        coaching, elite facilities, and a pathway to greatness.</p>
+      <div class="hero-buttons animate-up delay-2">
+        <button class="btn btn-primary btn-large" onclick="window.open('https://wa.me/916380199064', '_blank')">Book
+          Your Trial Now</button>
+        <a href="#about" class="btn btn-outline btn-large">Discover More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>WHY <span class="text-gold">GLORY UNITED?</span></h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-futbol"></i></div>
+          <h3>Pro Coaching</h3>
+          <p>Train under AIFF-certified coaches who have played at the highest levels of the game.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Elite Facilities</h3>
+          <p>Access state-of-the-art training grounds, gyms, and sports science support.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Proven Pathway</h3>
+          <p>A structured development program dedicated to transforming raw talent into professional ability.</p>
+        </div>
+      </div>
+
+      <!-- Coach Section -->
+      <div class="coach-profile"
+        style="margin-top: 5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 3rem; background: var(--card-bg); padding: 3rem; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
+        <div class="coach-image" style="flex: 1; min-width: 250px;">
+          <input type="file" id="coachUpload" accept="image/*" style="display: none;">
+          <img src="assets/coach.png?v=1.1"
+            id="coach-pic" alt="Coach Joushva"
+            style="width: 100%; border-radius: 12px; border: 3px solid var(--primary-gold); box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
+        </div>
+        <div class="coach-info" style="flex: 2; min-width: 300px;">
+          <h3
+            style="color: var(--primary-gold); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0.5rem; font-family: var(--font-heading);">
+            FOUNDER & HEAD COACH</h3>
+          <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+            JOUSHVA</h2>
+          <div
+            style="display: inline-block; background: var(--primary-red); color: white; padding: 0.4rem 1rem; border-radius: 4px; font-weight: bold; margin-bottom: 1.5rem; letter-spacing: 1px; font-size: 0.9rem; font-family: var(--font-heading);">
+            AIFF D-LICENSE COACH</div>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">Coach Joushva brings years of elite
+            experience and a deep passion for the beautiful game to Glory United. Holding a prestigious AIFF D-License,
+            he ensures that every training session meets the highest standards of professional player development.
+            Dedicated to nurturing raw talent, Coach Joushva is committed to guiding you on your path to glory.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="programs">
+    <div class="container">
+      <div class="section-title">
+        <h2>OUR <span class="text-gold">PROGRAMS & KIT</span></h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="programs-content"
+        style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; justify-content: center;">
+        <div class="program-info" style="flex: 1; min-width: 300px;">
+          <h3 style="color: var(--primary-gold); font-size: 1.8rem; margin-bottom: 1rem;">Glory United Official Kit</h3>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            When you join Glory United, you wear the colors of champions. Our official customized kit is designed for
+            peak performance, featuring breathable, moisture-wicking fabric and our signature crest.
+          </p>
+          <ul style="list-style: none; color: var(--text-light); margin-bottom: 2rem;">
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check text-gold" style="margin-right: 10px;"></i>
+              Premium Quality Fabric</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check text-gold" style="margin-right: 10px;"></i> Custom
+              Name & Number</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check text-gold" style="margin-right: 10px;"></i>
+              Included in Full-Season Program</li>
+          </ul>
+        </div>
+        <div class="program-kit-image"
+          style="flex: 1; min-width: 300px; text-align: center; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
+          <input type="file" id="kitUpload" accept="image/*" style="display: none;">
+          <img src="assets/kit.jpg?v=1.1"
+            id="kit-pic" alt="Official Kit"
+            style="max-width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery / Motivation -->
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=800"
+        alt="Footballer in action">
+      <div class="gallery-overlay">
+        <h3>PASSION</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&q=80&w=800"
+        alt="Stadium details">
+      <div class="gallery-overlay">
+        <h3>VICTORY</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Ready to Step on the Pitch?</h2>
+      <p>Secure your spot in our upcoming trial sessions. Spaces are strictly limited.</p>
+      <button class="btn btn-primary btn-large cta-pulse"
+        onclick="window.open('https://forms.gle/4a94vFuy6qqQ9Zfo8', '_blank')">Player Registration</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.png?v=1.1" alt="Glory United Logo" id="footer-logo"
+            onerror="this.onerror=null; this.src='https://via.placeholder.com/100/c10016/ffffff?text=LOGO';">
+          <span>GLORY UNITED</span>
+        </div>
+        <p>Forging the next generation of football superstars through discipline, technique, and character.</p>
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-light);"><i
+            class="fas fa-map-marker-alt text-gold" style="margin-right: 8px;"></i> 26RR+FM2, Sir Thyagaraya Rd,<br>T.
+          Nagar, Chennai,<br>Tamil Nadu 600017</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Glory United Football Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Booking handled via Google Forms in script.js -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
